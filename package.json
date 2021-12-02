@@ -1,0 +1,36 @@
+{
+  "name": "yelpcamp",
+  "version": "1.0.0",
+  "description": "YelpCamp: The ultimate camping site data base for research and reviews.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client \""
+  },
+  "keywords": [
+    "camping",
+    "reviews",
+    "travel",
+    "hiking",
+    "outdoors"
+  ],
+  "author": "Colt Steele, Edward Giovanni Luna",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.6",
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "method-override": "^3.0.0",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.14"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
