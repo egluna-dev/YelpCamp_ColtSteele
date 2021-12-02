@@ -8,6 +8,7 @@ const catchAsync = require('./utilities/catchAsync');
 const { reviewSchema } = require('./schemas.js');
 const Campground = require('./models/Campground');
 const Review = require('./models/Review');
+require('dotenv').config();
 
 
 const reviews = require('./routes/review');
